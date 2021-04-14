@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -69,6 +70,15 @@ namespace Blue_Fin_Inc.Models
         }
 
         //Methods
+        public override string ToString()
+        {
+            var orderPriceTrun = (Math.Truncate(OrderPrice * 100) / 100).ToString("n2");
+            if (ContainsLivestock)
+            {
+                return String.Format("Order No: {0} \nCustomer Name: {1} \nEircode: {2} \nNumber: {3} \nPayable Amount in EUR: {4} \nDoes the order contain livestock? Yes, it does! \nProducts Ordered: {5}", OrderNo, CustomerName, Eircode, ContactNo, orderPriceTrun, OrderDetails);
+            }
+            return String.Format("Order No: {0} \nCustomer Name: {1} \nEircode: {2} \nNumber: {3} \nPayable Amount in EUR: {4} \nDoes the order contain livestock? No, it doesn't! \nProducts Ordered: {5}", OrderNo, CustomerName, Eircode, ContactNo, orderPriceTrun, OrderDetails);
+        }
         public void AddLivestock(Livestock product_in)
         {
             CartLivestock find = livestockList.FirstOrDefault(l => l.ProductCode == product_in.ProductCode);
