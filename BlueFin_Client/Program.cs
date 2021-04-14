@@ -22,7 +22,7 @@ namespace BlueFin_Client
             Console.WriteLine();
             Console.WriteLine("Order #" + userInput + " details are the following");
             Console.WriteLine();
-            GetCustOrderByID(userInput).Wait();
+            GetOrderDetails(userInput).Wait();
             Console.WriteLine();
         }
 
@@ -65,7 +65,7 @@ namespace BlueFin_Client
         }
 
    
-        private static async Task GetCustOrderByID(int id)
+        private static async Task GetOrderDetails(int id)
         {
             try
             {
