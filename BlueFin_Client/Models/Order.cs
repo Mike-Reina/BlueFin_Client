@@ -39,6 +39,10 @@ namespace Blue_Fin_Inc.Models
         [DisplayName("Payable Amount €")]
         public double OrderPrice { get; set; }
 
+
+        [DisplayName("Order Placed on")]
+        public DateTime Date { get; set; }
+
         [Required]
         [DisplayName("Does the order contain livestock?")]
         public bool ContainsLivestock { get; set; }
@@ -75,9 +79,9 @@ namespace Blue_Fin_Inc.Models
             var orderPriceTrun = (Math.Truncate(OrderPrice * 100) / 100).ToString("n2");
             if (ContainsLivestock)
             {
-                return String.Format("Order No: {0} \nCustomer Name: {1} \nEircode: {2} \nNumber: {3} \nPayable Amount in EUR: {4} \nDoes the order contain livestock? Yes, it does! \nProducts Ordered: {5}", OrderNo, CustomerName, Eircode, ContactNo, orderPriceTrun, OrderDetails);
+                return String.Format("Order No: {0} \nCustomer Name: {1} \nEircode: {2} \nNumber: {3} \nPayable Amount in EUR: {4} \nDoes the order contain livestock? Yes, it does! \nPlaced on: {5} \nProducts Ordered: {6}", OrderNo, CustomerName, Eircode, ContactNo, orderPriceTrun, Date, OrderDetails);
             }
-            return String.Format("Order No: {0} \nCustomer Name: {1} \nEircode: {2} \nNumber: {3} \nPayable Amount in EUR: {4} \nDoes the order contain livestock? No, it doesn't! \nProducts Ordered: {5}", OrderNo, CustomerName, Eircode, ContactNo, orderPriceTrun, OrderDetails);
+            return String.Format("Order No: {0} \nCustomer Name: {1} \nEircode: {2} \nNumber: {3} \nPayable Amount in EUR: {4} \nDoes the order contain livestock? No, it doesn't! \nPlaced on: {5} \nProducts Ordered: {6}", OrderNo, CustomerName, Eircode, ContactNo, orderPriceTrun, Date, OrderDetails);
         }
         public void AddLivestock(Livestock product_in)
         {
