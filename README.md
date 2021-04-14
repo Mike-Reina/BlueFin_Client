@@ -76,19 +76,13 @@ Please provide Order Number #
 
 Order #3 details are the following
 
-Order No: 3
-Customer Name: Kate M
-Eircode: D13P556
-Number: +353830492724
-Payable Amount in EUR: 969.98
+Order No: 5
+Customer Name: Peter C
+Eircode: D14F666
+Number: +353830492456
+Payable Amount in EUR: 131.00
 Does the order contain livestock? Yes, it does!
-Products Ordered: || Livestock Items
- - Product Code: 1, Name: Common Clown Fish, Qty: 1
- - Product Code: 2, Name: Rose Bulb Anemone, Qty: 1
- - Product Code: 3, Name: Dancing Shrimp, Qty: 1
- || Equipment Items
- - Product Code: 3, Name: Red Sea Coral Pro Salt, Qty: 2
- - Product Code: 1, Name: JBL ProFlora m1003 CO2, Qty: 1
- 
+Placed on: 14/04/2021 22:36:59
+Products Ordered: || Livestock Items  -- Product Code: 1, Name: Common Clown Fish, Qty: 2
 
 ```
