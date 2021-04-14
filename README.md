@@ -2,6 +2,7 @@
 
 This client will show the abiltiy to access some of the RESTful endpoints for the BlueFinInc Web App.
 
+## GetProductDetail
 The GetProductDetail task will allow the client to ping the Web App for details of a specific product.
 
 It accepts the Product Code(int) and Product Type(str "Equipment" or "Livestock").
