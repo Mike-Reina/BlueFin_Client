@@ -4,7 +4,7 @@ This client will show the abiltiy to access some of the RESTful endpoints for th
 
 The GetProductDetail task will allow the client to ping the Web App for details of a specific product.
 
-It accepts the Product Code(int) and Product Tye(str "Equipment or Livestock").
+It accepts the Product Code(int) and Product Type(str "Equipment" or "Livestock").
 
 If the Product Code is valid it will retrieve the product model and print the details to the CLI.
 
