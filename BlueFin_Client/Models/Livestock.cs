@@ -120,7 +120,8 @@ namespace Blue_Fin_Inc.Models
 
         public override string ToString()
         {
-            return "Product name: " + Name + "# " + ProductCode + "\nDescription:\n" + Description + "\nColor(s): " + Colours + "\nCare Level:" + CareLevel + "\nTemperment:" + Temperment + "\nWater Type:" + WaterType + "\nWater Conditions: " + WaterConditions + "\nMax Size: " + MaxSize + "\nStock: " + Stock + "\nPrice: " + Price;
+            var priceTrun = (Math.Truncate(Price * 100) / 100).ToString("n2");
+            return "Product name: " + Name + "# " + ProductCode + "\nDescription:\n" + Description + "\nColor(s): " + Colours + "\nCare Level:" + CareLevel + "\nTemperment:" + Temperment + "\nWater Type:" + WaterType + "\nWater Conditions: " + WaterConditions + "\nMax Size: " + MaxSize + "\nStock: " + Stock + "\nPrice(EUR): " + priceTrun;
         }
 
     }
