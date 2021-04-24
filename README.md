@@ -86,3 +86,7 @@ Placed on: 14/04/2021 22:36:59
 Products Ordered: || Livestock Items  -- Product Code: 1, Name: Common Clown Fish, Qty: 2
 
 ```
+## An Example CLI:
+
+![image](https://drive.google.com/uc?export=view&id=17j3W5196V4gNKb4HU0tUWyFvbbECKmVG)
+ 
