@@ -102,7 +102,7 @@ Customer Name: Peter C
 Eircode: D14F666
 Number: +353830492456
 Payable Amount in EUR: 131.00
-Does the order contain livestock? Yes, it does!
+Contains livestock? Yes, it does!
 Placed on: 14/04/2021 22:36:59
 Products Ordered: || Livestock Items  -- Product Code: 1, Name: Common Clown Fish, Qty: 2
 
