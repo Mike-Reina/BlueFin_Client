@@ -11,13 +11,29 @@ If the Product Code is valid it will retrieve the product model and print the de
 
 ## Input:
 ```
-GetProductDetail(1, "Equipment").Wait();
-GetProductDetail(1, "Livestock").Wait();
+ Console.WriteLine("Please provide Equipment Id #");
+ int equipInput = Convert.ToInt32(Console.ReadLine(1));
+ Console.WriteLine();
+ Console.WriteLine("Equipment #" + equipInput + " details are the following");
+ GetProductDetail(equipInput, "Equipment").Wait(); 
+ Console.WriteLine();
+
+ Console.WriteLine("Please provide Equipment Id #");
+ int liveInput = Convert.ToInt32(Console.ReadLine(1));
+ Console.WriteLine();
+ Console.WriteLine("Equipment #" + liveInput + " details are the following");
+ GetProductDetail(liveInput, "Livestock").Wait();
+ Console.WriteLine();
 ```
 
 ## Output:
 
 ```
+Please provide Equipment Id #
+1
+
+Equipment #1 details are the following
+
 Product Name: JBL ProFlora m1003 CO2 # 1
 Manufacturer: JBL
 Description:
@@ -29,6 +45,11 @@ L x W x H: 0 x 0 x 0
 Weight: 12kg
 Stock: 4
 Price: 624.99
+
+Please provide Livestock Id #
+1
+
+Livestock #1 details are the following
 
 Product Name: Clown Fish # 1
 Description:
@@ -60,7 +81,7 @@ If the Order Number is valid, it will retrieve the order model and print the det
 ```
 //Order
 Console.WriteLine("Please provide Order Number #");
-int userInput = Convert.ToInt32(Console.ReadLine());
+int userInput = Convert.ToInt32(Console.ReadLine(5));
 Console.WriteLine();
 Console.WriteLine("Order #" + userInput + " details are the following");
 Console.WriteLine();
