@@ -44,7 +44,7 @@ namespace Blue_Fin_Inc.Models
         public DateTime Date { get; set; }
 
         [Required]
-        [DisplayName("Does the order contain livestock?")]
+        [DisplayName("Contains livestock?")]
         public bool ContainsLivestock { get; set; }
 
         [DisplayName("Products Ordered")]

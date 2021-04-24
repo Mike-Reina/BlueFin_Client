@@ -17,6 +17,7 @@ namespace BlueFin_Client
             GetProductDetail(1, "Livestock").Wait();
 
             //Order
+            Console.WriteLine();
             Console.WriteLine("Please provide Order Number #");
             int userInput = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
