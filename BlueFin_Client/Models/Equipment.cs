@@ -144,7 +144,8 @@ namespace Blue_Fin_Inc.Models
 
         public override string ToString()
         {
-            return "Product name: " + Name + "# " + ProductCode + "\nManufacturer: " + Manufacturer + "\nDescription:\n" + Description + "\nColor(s): " + Colour + "\nDimensions: " + Lenght + " x " + Width + " x " + Height + "\nWeight: " + Weight + "\nStock: " + Stock + "\nPrice€: " + Price;
+            var priceTrun = (Math.Truncate(Price * 100) / 100).ToString("n2");
+            return "Product name: " + Name + "# " + ProductCode + "\nManufacturer: " + Manufacturer + "\nDescription:\n" + Description + "\nColor(s): " + Colour + "\nDimensions: " + Lenght + " x " + Width + " x " + Height + "\nWeight: " + Weight + "\nStock: " + Stock + "\nPrice(EUR): " + priceTrun;
         }
     }
 }

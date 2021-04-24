@@ -13,8 +13,19 @@ namespace BlueFin_Client
         static void Main()
         {
             //Products
-            GetProductDetail(1, "Equipment").Wait();
-            GetProductDetail(1, "Livestock").Wait();
+            Console.WriteLine("Please provide Equipment Id #");
+            int equipInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("Equipment #" + equipInput + " details are the following");
+            GetProductDetail(equipInput, "Equipment").Wait(); 
+            Console.WriteLine();
+
+            Console.WriteLine("Please provide Equipment Id #");
+            int liveInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("Equipment #" + liveInput + " details are the following");
+            GetProductDetail(liveInput, "Livestock").Wait();
+            Console.WriteLine();
 
             //Order
             Console.WriteLine();
@@ -32,7 +43,7 @@ namespace BlueFin_Client
         {
             HttpClient client = new HttpClient();
 
-            client.BaseAddress = new Uri("http://localhost:32679");
+            client.BaseAddress = new Uri("http://bluefininc.azurewebsites.net/");
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
             if (ProductType == "Equipment")
@@ -74,7 +85,7 @@ namespace BlueFin_Client
                 HttpClient client = new HttpClient();
 
                 //2.  Base URL for API controller eg. restFull service
-                client.BaseAddress = new Uri("http://localhost:32679/");
+                client.BaseAddress = new Uri("http://bluefininc.azurewebsites.net/");
 
                 //3. Adding a accept header eg. application/json
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
