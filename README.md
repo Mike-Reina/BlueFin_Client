@@ -109,5 +109,5 @@ Products Ordered: || Livestock Items  -- Product Code: 1, Name: Common Clown Fis
 ```
 ## An Example CLI:
 
-![image](https://drive.google.com/file/d/1fepa9JnGbw5md5qIoYAGEe20n49JsNZp/view?usp=sharing)
+![image](https://drive.google.com/file/d/1fepa9JnGbw5md5qIoYAGEe20n49JsNZp)
 
