@@ -20,7 +20,7 @@ namespace BlueFin_Client
             GetProductDetail(equipInput, "Equipment").Wait(); 
             Console.WriteLine();
 
-            Console.WriteLine("Please provide Equipment Id #");
+            Console.WriteLine("Please provide Livestock Id #");
             int liveInput = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine("Equipment #" + liveInput + " details are the following");
